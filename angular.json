@@ -3,5 +3,37 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-  }
+    "portal-route-guard": {
+      "projectType": "library",
+      "root": "projects/portal-route-guard",
+      "sourceRoot": "projects/portal-route-guard/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/portal-route-guard/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/portal-route-guard/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/portal-route-guard/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/portal-route-guard/src/test.ts",
+            "tsConfig": "projects/portal-route-guard/tsconfig.spec.json",
+            "karmaConfig": "projects/portal-route-guard/karma.conf.js"
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "portal-route-guard"
 }

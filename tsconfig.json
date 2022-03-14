@@ -16,6 +16,12 @@
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
+    "paths": {
+      "portal-route-guard": [
+        "dist/portal-route-guard/portal-route-guard",
+        "dist/portal-route-guard"
+      ]
+    },
     "target": "es2017",
     "module": "es2020",
     "lib": [

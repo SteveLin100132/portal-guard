@@ -1,0 +1,5 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+cd ./dist/portal-route-guard
+npm config set registry https://registry.npmjs.org/ && npm publish --access public
