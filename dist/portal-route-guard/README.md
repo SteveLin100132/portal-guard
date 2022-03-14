@@ -25,7 +25,7 @@ npm i portal-route-guard --save
 app.module.ts
 
 ```typescript
-import { PortalGuardModule } from 'wistroni40-portal-guard';
+import { PortalGuardModule } from 'portal-route-guard';
 ...
 
 @NgModule({
@@ -46,7 +46,7 @@ export class AppModule {}
 app-routing.module.ts
 
 ```typescript
-import { PortalGuard } from 'wistroni40-portal-guard';
+import { PortalGuard } from 'portal-route-guard';
 ...
 
 const routes: Routes = [
@@ -84,7 +84,7 @@ app.component.ts
 import { Component, OnInit } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
 import { map } from "rxjs";
-import { PortalAccessmentService } from "wistroni40-portal-guard";
+import { PortalAccessmentService } from "portal-route-guard";
 
 @Component({
   selector: "app-root",
