@@ -2,3 +2,5 @@
 . "$(dirname "$0")/_/husky.sh"
 
 npm run build && git add ./dist
+yes | cp README.md ./dist/portal-route-guard
+yes | cp CHANGELOG.md ./dist/portal-route-guard
