@@ -3,7 +3,7 @@
 # Install
 
 ```
-npm i wistroni40-portal-guard --save
+npm i portal-route-guard --save
 ```
 
 # Table of Contents

@@ -1,6 +1,6 @@
 {
   "name": "wistroni40-portal-guard",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
