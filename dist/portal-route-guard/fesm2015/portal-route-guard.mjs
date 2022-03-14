@@ -47,12 +47,13 @@ class PortalAccessmentService {
      * @param options           Portal 路由守衛配置
      */
     constructor(options) {
+        var _a;
         this.options = options;
         /**
          * Portal 存取必填欄位
          */
         this.essentialKeys = ['userID', 'token', 'sysId', 'site', 'plant'];
-        this.essentialKeys = this.options.essentialKeys || this.essentialKeys;
+        this.essentialKeys = ((_a = this.options) === null || _a === void 0 ? void 0 : _a.essentialKeys) || this.essentialKeys;
     }
     /**
      * 是否允許訪忘該頁面

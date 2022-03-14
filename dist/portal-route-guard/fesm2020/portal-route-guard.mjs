@@ -63,7 +63,7 @@ class PortalAccessmentService {
          * Portal 存取必填欄位
          */
         this.essentialKeys = ['userID', 'token', 'sysId', 'site', 'plant'];
-        this.essentialKeys = this.options.essentialKeys || this.essentialKeys;
+        this.essentialKeys = this.options?.essentialKeys || this.essentialKeys;
     }
     /**
      * 是否允許訪忘該頁面

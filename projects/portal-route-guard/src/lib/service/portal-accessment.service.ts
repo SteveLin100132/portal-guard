@@ -32,7 +32,7 @@ export class PortalAccessmentService implements CanActivate {
   constructor(
     @Inject(PORTAL_GUARD_OPTION) private readonly options: PortalGuardOption
   ) {
-    this.essentialKeys = this.options.essentialKeys || this.essentialKeys;
+    this.essentialKeys = this.options?.essentialKeys || this.essentialKeys;
   }
 
   /**
